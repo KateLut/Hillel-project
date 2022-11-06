@@ -1,0 +1,43 @@
+.team-photo {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-image: url("../img/about/team-1x.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    &__title {
+    font-weight: $boldText;
+font-size: $bigText36;
+line-height: 44px;
+color: $whiteText;
+text-align: center;
+letter-spacing: 13px;
+text-transform: uppercase;
+padding: 12%;
+opacity: 0.8;
+}
+}
+
+@media (min-width: 768px) {
+    .team-photo {
+     &__title {
+font-size: $hugeText;
+line-height: 56px;
+letter-spacing: 63px;
+     }
+}
+}
+@media (min-width: 992px) {
+    .team-photo {
+     &__title {
+font-size: $hugeText86;
+line-height: 105px;
+     }
+}
+}
+
+@media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
+.team-photo {
+    background-image: url("../img/about/team-2x.jpg");
+    background-size: contain;
+}
+}

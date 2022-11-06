@@ -1,0 +1,17 @@
+.title {
+   font-weight: $boldText;
+        margin-bottom: 30px;
+        font-size: $mediumText;
+        line-height: 37px;
+        background-color: $active;
+  background-image: $gradient;
+        background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 768px) {
+    .title {
+    font-size: $bigText;
+    line-height: 46px;
+    }
+}

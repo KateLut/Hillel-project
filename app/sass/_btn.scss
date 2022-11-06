@@ -1,0 +1,29 @@
+.btn {
+    white-space: nowrap;
+    border: none;
+     font-weight: $boldText;
+font-size: 30px;
+line-height: 37px;
+color: #B3B3BA;
+background-color: transparent;
+margin-right: 30px;
+cursor: pointer;
+&.active {
+    background-color: $active;
+  background-image: $gradient;
+        background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+}
+@media (min-width: 768px) {
+    .btn {
+        font-size: $bigText;
+        line-height: 46px;
+            }
+}
+
+@media (min-width: 992px) {
+    .btn {
+        margin-bottom: 30px;
+            }
+}

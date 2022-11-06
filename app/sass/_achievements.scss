@@ -1,0 +1,42 @@
+.achievements {
+    background-color: $greyBackground;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    &-title {
+        font-weight: $boldText;
+font-size: $smallText;
+line-height: 17px;
+text-align: center;
+letter-spacing: 1px;
+text-transform: uppercase;
+margin-bottom: 30px;
+    }
+
+    &__item {
+        display: block;
+        list-style: none;
+        background-color: $whiteText;
+        border-radius: 12px;
+
+        margin-right: 10px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+         background-repeat: no-repeat;
+        background-position: center;
+            }
+
+&__item--first {
+       background-image: url("../img/about/achievment-1.png");
+
+            }
+&__item--second {
+    background-image: url("../img/about/achievment-2.jpg");
+}
+&__item--third {
+    background-image: url("../img/about/achievment-3.png");
+}
+&__item--forth {
+    background-image: url("../img/about/achievment-4.png");
+}
+
+        }

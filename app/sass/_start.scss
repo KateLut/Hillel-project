@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+.body {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #737373;
+    min-width: 375px;
+}
+
+.container {
+    max-width: 1380px;
+    min-width: 375px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+    text-decoration: none;
+   color: $whiteText;
+    }

@@ -1,0 +1,126 @@
+.partners {
+    margin-top: 60px;
+        &__title {
+        font-weight: $boldText;
+        font-size: $smallText;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-align: center;
+        color: $darkGreyText;
+        margin-bottom: 30px;
+    }
+    &__ads {
+        display: flex;
+        flex-direction: column;
+        margin-right: -30px;
+        margin-left: -30px;
+
+    }
+
+    &-img {
+        padding: 30px 70px;
+        height: 120px;
+        width: auto;
+    }
+
+    &__ads-hillel {
+        background-color: $hillelBackground;
+
+    }
+
+    &__ads-wanna {
+        background-color: $wannaBackground;
+    }
+    &__ads-tap {
+        background-color: $tapBackground;
+    }
+    &__ads-look {
+        background-color: $lookBackground;
+    }
+    &__ads-orange {
+        background-color: $orangeBackground;
+    }
+    &__ads-adtel {
+        background-color: $adbackground;
+    }
+    &__ads-clickky,
+    &__ads-eco,
+    &__ads-infra,
+    &__ads-city,
+    &__ads-art,
+    &__ads-ultimate {
+        display: none;
+    }
+
+    &__ads-clickky {
+        background-color: $clickkyBackground;
+    }
+
+    &__ads-eco {
+        background-color: $ecoBackground;
+    }
+
+    &__ads-infra {
+        background-color: $infraBackground;
+    }
+    &__ads-city {
+        background-color: $cityBackground;
+    }
+
+    &__ads-art {
+        background-color: $artBackground;
+    }
+    &__ads-ultimate {
+        background-color: $blackText;
+    }
+}
+
+@media (min-width: 540px) {
+    .partners {
+        &__ads {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &-img {
+            width: 50%;
+        }
+    }
+}
+@media (min-width: 768px) {
+    .partners {
+        padding-right: 0;
+        padding-left: 0;
+        &__ads {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        &-img {
+            width: 33.3%;
+        }
+
+    &__ads-clickky,
+    &__ads-eco,
+    &__ads-infra,
+    &__ads-city,
+    &__ads-art,
+    &__ads-ultimate {
+        display: block;
+    }
+}
+}
+@media (min-width: 992px) {
+    .partners {
+        &__ads {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        &-img {
+            width: 25%;
+        }
+    }
+}

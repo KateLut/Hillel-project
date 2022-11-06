@@ -1,0 +1,27 @@
+.my-dots {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+
+
+
+}
+.my-dots li {
+        margin: 0 7px;
+    }
+
+.my-dots button {
+    width: 16px;
+      height: 16px;
+      cursor: pointer;
+      background-color: $blueText;
+      border-radius: 50%;
+      border: none;
+      font-size: 0;
+      opacity: 0.2;
+
+}
+.my-dots li.slick-active button{
+    opacity: 1;
+}

@@ -1,0 +1,51 @@
+.legal-services {
+    &__text {
+    font-weight: $regularText;
+    font-size: $smallText19;
+    line-height: 30px;
+    padding-bottom: 30px;
+    color: $blackText;
+    }
+    &__stats {
+        border-left: 4px solid $greyline;
+        padding-left: 35px;
+    }
+    &__num {
+        font-size: $bigText36;
+        line-height: 44px;
+        position: relative;
+        padding-left: 42px;
+        margin-bottom: 10px;
+    }
+    &__num::before {
+        content: "";
+        position: absolute;
+        background-image: url("../img/about/flag.svg");
+        width: 22px;
+        height: 26px;
+        left: 5px;
+        top: 7px;
+    }
+    &__description {
+        font-size: $smallText16;
+        line-height: 20px;
+        color: $darkGreyText;
+    }
+    &__description:not(:last-child) {
+        padding-bottom: 40px;
+}
+}
+
+@media (min-width: 992px) {
+    .legal-services {
+        display: flex;
+        flex-direction: row;
+        &__info {
+            width: 570px;
+            padding-right: 30px;
+        }
+        &__title {
+            padding-left: 30px;
+        }
+    }
+}

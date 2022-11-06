@@ -1,0 +1,53 @@
+.homepage {
+    background: url("../img/symbol.svg") no-repeat center top,
+        linear-gradient(
+            228.57deg,
+            #323264 11.93%,
+            #323264 57.17%,
+            #643e72 87.46%
+        );
+    border-radius: 0px 0px 12px 12px;
+    background-size: 523px 600px, auto;
+    margin-top: 0;
+    position: relative;
+    &--white {
+        background: $whiteText;
+    }
+}
+.homepage::after {
+    content:"";
+    background-color: $violetShadow;
+    height: 10px;
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+    right: 20px;
+    border-radius: 0px 0px 12px 12px;
+}
+.homepage::before {
+    content:"";
+    background-color: $blueShadow;
+    height: 10px;
+    position: absolute;
+    bottom: -20px;
+    left: 40px;
+    right: 40px;
+    border-radius: 0px 0px 12px 12px;
+    }
+    .homepage--white:after,
+    .homepage--white:before {
+        display: none;
+    }
+
+
+@media (min-width: 768px) {
+    .homepage {
+        background-size: 670px 768px, auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .homepage {
+        background-size: 697px 799px, auto;
+    }
+}
